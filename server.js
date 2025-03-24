@@ -172,6 +172,13 @@ app.get('/agb', (req, res) => {
 	}
 });
 
+app.post('/agb', (req, res) => {}
+
+
+
+
+
+
 app.get('/hilfe', (req, res) => {
 
 	if(kunde.IstEingeloggt){
@@ -223,7 +230,9 @@ app.get('/profil', (req, res) => {
 	}
 });
 
+
 app.post('/profil', (req, res) => {
+
 	
 	var meldung = "";
 
@@ -263,8 +272,17 @@ app.post('/profil', (req, res) => {
 });
 
 app.get('/postfach', (req, res) => {
-	res.render('postfach.ejs',{});
+ 
+	kunde.IstEingeloggt = false 
+	console.log('kunde.IstEingeloggt:' + kunde.IstEingeloggt)
+
+	res.render('postfach.ejs',{
+		Meldung: "Melden Sie sich zuerst an."
+	});
 });
+
+app.post('/kreditBeantragen', (req, res) => {});
+
 
 // Sobald die Seite "Kredit beantragen" aufgerufen wird, wird die app.get abgearbeitet.
 app.get('/kreditBeantragen', (req, res) => {

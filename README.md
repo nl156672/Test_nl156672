@@ -11,6 +11,34 @@ Am Ende müssen Sie Ihr Projekt commiten und pushen. Senden Sie mir den Link in 
 
 Beantworten Sie die folgenden Frage hier direkt im Text: Welche Aufgabe haben cookies in unserer Banking-App?
 
+Cookies sind kleine Textdateien. 
+Sie haben, beispielsweise in unserer Banking-App, die Aufgabe die Informationen auf dem Gerät des Benutzers abzuspeichern
+und bei einem erneuten Aufruf sollen diese wieder an den Server gesendet werden.
+Es gibt zwei Arten von Cookies:
+Die technisch notwendigen braucht man für das Funktonieren der Website.
+Die technisch nicht notwendigen werden eingestezt ob Daten zu sammeln um z.B Werbung an den Benutzer anpassen zu können.
+
+Warum sind Passkeys besser als die Kombination aus Benutzername/Kennwort ?
+
+Passkeys sind eine moderne und sichere Alternative zu Passwörtern und basieren auf asymetrischer Verschlüsselung.
+
+Passkeys sind eine sichere und bessere Lösung, da sie vor Phising schützen und eine hohe Sicherheit garnatieren
+dadurch das das Kennwort nicht weitergeben wird. 
+
+Es werden zwei Schlüssel generiert:
+Der private bleibt auf dem Gerät des Benutzers.
+Der öffentliche liegt auf der Website.
+
+Der Dienst erstellt eine Challenge, diese wird an das Gerät des Benutzers gesendet.
+Und bei dem Benutzer wird die Challenge mithilfe des priavten Schlüssels, den nur er hat, signiert und zurück an den Dienst geschickt.
+Der Dienst prüft die Signatur der Challenge dann auf Echtheit.
+
+Jede signierte Challenge ist eninzigartig.
+Außerdem basieren Passkey auf mathematischen Verfahren, die zwar in die eine Richtung schnell lösbar sind 
+aber in die andere Richtung nur sehr schwer lösbar sind.
+
+
+
 ## Aufgabe 3
 
 Auf der Seite Hilfe sind vier Fehler eingebaut. Finden und korrigieren Sie die Fehler. Schreiben Sie zu jedem Fehler eine Kommentarzeile, in der Sie schreiben, was Sie korrigiert haben.
